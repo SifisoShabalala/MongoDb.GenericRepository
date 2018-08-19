@@ -6,3 +6,6 @@
 /src/MongoDb.GenericRepository/obj/Debug
 /src/packages
 /.vs/MongoDb.GenericRepository/v15
+/src/MongoDb.GenericRepository/bin
+/src/MongoDb.GenericRepository/obj
+/packages
