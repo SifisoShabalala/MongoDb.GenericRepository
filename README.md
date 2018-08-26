@@ -23,10 +23,8 @@ namespace MongoDb.GenericRepository
             var connection = new DatabaseConnection<Person>(settings);
             var repository = new MongoRepository<Person>(connection);
 
-            repository.Add(new Person 
-			`{
-				Name = "Test"
-			 });
+            repository.Add(new Person {
+					Name = "Test" });
         }
 
         class Person
