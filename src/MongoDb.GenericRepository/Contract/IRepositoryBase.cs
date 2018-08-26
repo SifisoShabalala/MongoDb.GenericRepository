@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace MongoDb.GenericRepository.Contract
 {
@@ -11,5 +12,10 @@ namespace MongoDb.GenericRepository.Contract
         IEnumerable<T> GetAll();
         T GetSingle(Expression<Func<T, bool>> predicate);
         void Delete(Expression<Func<T, bool>> predicate);
+        Task AddAsync(T entity);
+        Task UpdateAsync(Expression<Func<T, bool>> predicate, T entity);
+        Task<IEnumerable<T>> GetAllAsync();
+        Task<T> GetSingleAsync(Expression<Func<T, bool>> predicate);
+        Task DeleteAsync(Expression<Func<T, bool>> predicate);
     }
 }

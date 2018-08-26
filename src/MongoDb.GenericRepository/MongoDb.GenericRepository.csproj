@@ -64,12 +64,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contract\IDatabaseConnection.cs" />
-    <Compile Include="Contract\IDatabaseSettings.cs" />
+    <Compile Include="Contract\IDbConnection.cs" />
+    <Compile Include="Contract\IDbSettings.cs" />
     <Compile Include="Contract\IRepositoryBase.cs" />
     <Compile Include="Database\DatabaseConnection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\MongoRepository.cs" />
-    <Compile Include="Settings\DatabaseSettings.cs" />
+    <Compile Include="Settings\Db.cs" />
+    <Compile Include="Settings\DbConnection.cs" />
+    <Compile Include="Settings\DbCollection.cs" />
+    <Compile Include="Settings\DbSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
