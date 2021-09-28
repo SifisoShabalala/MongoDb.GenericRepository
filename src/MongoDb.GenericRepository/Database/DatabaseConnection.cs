@@ -6,6 +6,7 @@ namespace MongoDb.GenericRepository.Database
 {
     public class DatabaseConnection<T> : IDatabaseConnection<T> where T : class
     {
+        // This is a variable
         private readonly IDbConnection _connection;
 
         static DatabaseConnection()
